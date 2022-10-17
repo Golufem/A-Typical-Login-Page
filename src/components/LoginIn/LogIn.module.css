@@ -1,0 +1,60 @@
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 85%;
+    width: 45rem;
+    margin: 2.5rem auto;
+    border: 1px solid rgb(219, 204, 204);
+    padding: 2rem;
+}
+.inputfield{
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem;
+
+}
+.inputfield input{
+    width: 80%;
+    height: 3rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+}
+
+.inputfield input:focus{
+    border:1px solid rgb(32, 31, 31);
+    background: #b3b0ff;
+    outline: none;
+}
+.inputfield input.invalid{
+    
+    border:1px solid #ab2209;
+    background: #fbd2d9;
+}
+.button{
+    display: flex;
+    margin: auto;
+    border: 1px solid #4f005f;
+    background: #4f005f;
+}
+.button:hover,
+.button:active {
+  background: #741188;
+  border-color: #741188;
+}
+
+@media(max-width: 500px){
+    .inputfield{
+        flex-direction: column;
+        align-items: flex-start;
+        
+    
+    }
+
+    .inputfield label{
+        margin-bottom: 10px;
+    }
+}
