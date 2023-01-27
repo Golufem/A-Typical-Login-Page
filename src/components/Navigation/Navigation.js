@@ -11,14 +11,16 @@ const Navigation = () => {
 //   const logOutHere =()=>{
 //     props.logOut()
 // }
+
+ const isloged = ctx.isLoggedIn
  
   return (
     
     <nav className={navStyles.nav}>
         <ul >
-            {ctx.isLoggedIn && <li><a > User</a></li>}
-            { ctx.isLoggedIn &&<li><a> Admin</a></li>}
-            {ctx.isLoggedIn && <li><Button className= {navStyles.button} onClick = { ctx.isLoggedOut}>LogOut</Button></li>
+            {isloged && <li><a > User</a></li>}
+            { isloged &&<li><a> Admin</a></li>}
+            {isloged && <li><Button className= {navStyles.button} onClick = { ctx.isLoggedOut}>LogOut</Button></li>
           }
         
         </ul>
